@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/MySlider/slider.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Document</title>
+</head>
+<header>
+    <div class="head-row">
+        <div class="head-logo">
+            <img src="/images/logo.png" alt="">
+        </div>
+        <div class="head-phone">
+            <p>8-800-100-5005</p>
+            <p>+7(3452) 522-000</p>
+        </div>
+    </div>
+    <div class="head-nav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Кредитные карты</a>
+                </li>
+                <li class="select">
+                    <a href="">Вклады</a>
+                </li>
+                <li>
+                    <a href="">Дебетовая карта</a>
+                </li>
+                <li>
+                    <a href="">Страхование</a>
+                </li>
+                <li>
+                    <a href="">Друзья</a>
+                </li>
+                <li>
+                    <a href="">Интернет банк</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+</header>
+<body>
+    <div class="body-container">
+        <div>
+            <ul class="breadcrumbs">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Вклады</a></li>
+                <li>Калькулятор</li>
+            </ul>
+        </div>
+        <div class="calc">
+            <form id="form">
+                <p class="title">Калькулятор</p>
+                <div class="row">
+                    <label class="lbl" for="datepicker">Дата оформления вклада</label>
+                    <input class="inp" type="text" id="datepicker" name="date" value="дд.мм.гггг">
+                </div>
+                <div class="row">
+                    <label class="lbl" for="sum-deposit">Сумма вклада</label>
+                    <input class="inp" type="number" name="sum-deposit" id="sum-deposit">
+                    <div id="slider1"></div>
+                </div>
+                <div class="row">
+                    <label class="lbl">Срок вклада</label>
+                    <select class="inp" name="temp-deposit">
+                        <option value="1">1 Год</option>
+                        <option value="2">2 Год</option>
+                        <option value="3">3 Год</option>
+                        <option value="4">4 Год</option>
+                        <option value="5">5 Год</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="lbl">Пополнение вклада</label>
+                    <div class="radio-div">
+                        <input value="false" type="radio" name="deposit-flag" id="no" checked>
+                        <label class="lbl-text" for="no">Нет</label>
+                        <input value="true" type="radio" name="deposit-flag" id="yes">
+                        <label class="lbl-text" for="yes">Да</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="lbl" for="add-deposit">Сумма пополнения вклада</label>
+                    <input class="inp" type="number" name="add-deposit" id="add-deposit">
+                    <div id="slider2"></div>
+                </div>
+                <div class="row">
+                    <input class="btn" type="submit" value="Рассчитать" name="send">
+                    <p class="result-text">Результат:</p>
+                    <p class="result" id="result">0 руб</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/MySlider/Slider.js"></script>
+    <script src="/script.js"></script>
+</body>
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <a href="">Кредитные карты</a>
+            </li>
+            <li>
+                <a href="">Вклады</a>
+            </li>
+            <li>
+                <a href="">Дебетовая карта</a>
+            </li>
+            <li>
+                <a href="">Страхование</a>
+            </li>
+            <li>
+                <a href="">Друзья</a>
+            </li>
+            <li>
+                <a href="">Интернет банк</a>
+            </li>
+        </ul>
+    </nav>
+</footer>
+</html>

@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "Europe";
+    src: url("/fonts/europe-normal.ttf");
+}
+
+body{
+    margin: 0;
+}
+
+html{
+    width: 1000px;
+    margin: auto;
+}
+
+header .head-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 13px 25px 13px;
+    align-items: center;
+}
+
+header .head-row .head-phone{
+    font-size: 18px;
+    font-family: "Europe";
+    color: rgb(205, 81, 33);
+    line-height: 1.111;
+    text-align: left;
+}
+
+header .head-row .head-phone p{
+    margin: 0;
+}
+
+header .head-row .head-logo{
+    margin: 0;
+}
+
+header .head-nav{
+    margin: 0px 13px 0px 13px;
+    background-color: #272425;
+}
+
+header .head-nav nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #272425;
+    align-items: center;
+}
+
+header .head-nav nav li a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.488;
+}
+
+header .head-nav nav ul{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 15px 0;
+}
+
+header .head-nav nav ul li{
+    display: inline;
+    border-right: 1px solid rgb(205, 81, 33);
+    padding: 15px;
+    margin: 0;
+    width: max-content;
+}
+
+header .head-nav nav li:last-child{
+    border-right: none;
+}
+
+.select{
+    background-color: rgb(205, 81, 33);
+}
+
+.body-container{
+    margin: 16px 30px;
+}
+
+.breadcrumbs {
+    margin: 0; padding: 0;
+}
+.breadcrumbs li {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(39, 36, 37);
+    line-height: 2;
+    text-align: left;
+}
+
+.breadcrumbs li a{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(39, 36, 37);
+    text-decoration: underline;
+    line-height: 2;
+    text-align: left;
+}
+
+.breadcrumbs li::before {
+    content: '- ';
+}
+.breadcrumbs li:first-child::before {
+    content: '';
+}
+
+footer{
+    background-color: #272425;
+    margin: 0;
+    width: 974px;
+    height: 55px;
+    position: fixed;
+    bottom: 0;
+    margin: 0 13px;
+} 
+
+footer nav{
+    display: flex;
+    flex-direction: row;
+    margin: 0 60px;
+}
+
+footer nav li a{
+    text-align: center;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.736;
+    text-decoration: underline;
+}
+
+footer nav ul{
+    background-color: #272425;
+    padding: 0;
+    margin: 12px 0;
+}
+
+footer nav ul li{
+    display: inline;
+    padding: 12.5px;
+    margin: 0;
+    width: max-content;
+}
+
+.calc{
+    background-color: #ebeef2;
+    width: 650px;
+    border: 1px solid darkgray;
+    margin-top: 20px;
+}
+
+.calc .title{
+    font-size: 30px;
+    font-family: "Arial";
+    color: rgb(205, 81, 33);
+    line-height: 1.067;
+    margin: 20px 100px;
+}
+
+.calc .row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.calc .radio-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.calc .radio-div input{
+    margin: 0;
+    margin-right: 10px;
+}
+
+.calc .lbl{
+    display: block;
+    width: 200px;
+    text-align: right;
+    margin-right: 30px;
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    line-height: 1.429;
+}
+
+.calc .lbl-text{
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    line-height: 1.429;
+    margin-right: 20px;
+}
+
+.calc .inp{
+    width: 100px;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid darkgray;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.calc .inp:hover{
+    border: 1px solid rgb(205, 81, 33);
+}
+
+.btn{
+    background-image: url(/images/button.png);
+    width: 106px;
+    height: 40px;
+    border: none;
+    margin-left: 20px;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(68, 84, 24);
+    font-weight: bold;
+    line-height: 1.333;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.result-text {
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(68, 84, 24);
+    font-weight: bold;
+    line-height: 1.333;
+    margin-left: 25px;
+}
+
+.result {
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    line-height: 1.429;
+    margin-left: 5px;
+}
+  
+  
+  
+  
